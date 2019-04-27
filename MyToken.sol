@@ -3,12 +3,16 @@ pragma solidity =0.4.25;
 contract MyToken {
     /* This creates an array with all balances */
     mapping (address => uint256) public balanceOf;
+    string public symbol;
+    string public name;
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
     constructor(
         uint256 initialSupply
         ) public {
         balanceOf[msg.sender] = initialSupply;              // Give the creator all initial tokens
+        symbol = "DAPPSUNI";
+        name="DAPPSUNI";
     }
 
     /* Send coins */
