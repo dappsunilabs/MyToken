@@ -1,6 +1,6 @@
 pragma solidity =0.4.25;
 
-contract MyToken {
+contract DappsUni {
     /* This creates an array with all balances */
     mapping (address => uint256) public balanceOf;
     string public symbol;
