@@ -1,6 +1,6 @@
-pragma solidity =0.4.25;
+pragma solidity ^0.5;
 
-contract DappsUni {
+contract xUni {
     /* This creates an array with all balances */
     mapping (address => uint256) public balanceOf;
     string public symbol;
@@ -11,8 +11,8 @@ contract DappsUni {
         uint256 initialSupply
         ) public {
         balanceOf[msg.sender] = initialSupply;              // Give the creator all initial tokens
-        symbol = "DAPPSUNI";
-        name="DAPPSUNI";
+        symbol = "angapp";
+        name="praneeth";
     }
 
     /* Send coins */
@@ -24,7 +24,7 @@ contract DappsUni {
         return true;
     }
     
-    function get () constant returns (uint) {
+    function get () public returns (uint) {
         return balanceOf[msg.sender];
     }
     
